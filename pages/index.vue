@@ -1,26 +1,34 @@
 <template> 
 	<div id="canvas">
 		<div id="deep-space">
-			<h1> 
-				Menu
+			<h1 
+				class="custom-title"
+			> 
+				Galaxy Raiders
 			</h1>
 
-			<h2>
-				<NuxtLink to = "/game"> Jogar </NuxtLink>
-			</h2>
+			<div class="button-stack">
+				<NuxtLink 
+					to = "/game"
+					class = "custom-nuxtlink"
+				> 
+					Jogar 
+				</NuxtLink>
 
-			<h2>
 				<NuxtLink 
 					to = "/scoreboard"
-					target = "_blank"
+					class = "custom-nuxtlink"
 				> 
 					Placar 
 				</NuxtLink>
-			</h2>
 
-			<h2>
-				<button @click = "exitGame"> Sair </button>
-			</h2>
+				<button 
+					@click = "exitGame"
+					class = "custom-button"
+				> 
+					Sair 
+				</button>
+			</div>
 		</div>
 	</div>
 </template>
@@ -54,8 +62,10 @@ export default {
 }
 
 #deep-space {
-  height: calc(100% - 4rem);
-  width: calc(100% - 4rem);
+  height: calc(100vh - 4rem);
+  width: calc(100vw - 4rem);
+
+  padding: 0rem;
 
   background-image: url("~/assets/space.png");
   background-origin: content-box;
@@ -64,6 +74,32 @@ export default {
 
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+}
+
+.button-stack {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.custom-button,
+.custom-nuxtlink {
+	margin: 10px;
+	padding: 15px 30px;
+	font-size: 20px;
+	background-color: #36bbf5;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.custom-title {
+	font-size: 40px;
+	margin: 50px;
+	color: #FFFFFF;
 }
 </style>
