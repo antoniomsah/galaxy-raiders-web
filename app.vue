@@ -2,6 +2,10 @@
   <NuxtPage />
 </template>
 
+<script>
+	import './assets/global.css'
+</script>
+
 <style>
 * {
   margin: 0;
