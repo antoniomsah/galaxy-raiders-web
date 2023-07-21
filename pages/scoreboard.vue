@@ -2,39 +2,15 @@
 	<div id="canvas">
 		<div id="deep-space">
 			<h1> 
-				Menu
+				Placar
 			</h1>
 
 			<h2>
-				<NuxtLink to = "/game"> Jogar </NuxtLink>
-			</h2>
-
-			<h2>
-				<NuxtLink 
-					to = "/scoreboard"
-					target = "_blank"
-				> 
-					Placar 
-				</NuxtLink>
-			</h2>
-
-			<h2>
-				<button @click = "exitGame"> Sair </button>
+				<NuxtLink to = "/"> Voltar </NuxtLink>
 			</h2>
 		</div>
 	</div>
 </template>
-
-<script>
-export default {
-	methods: {
-		// simulating exiting the game by redirection
-		exitGame() {
-			window.location.href = "https://www.google.com"
-		}
-	}
-}
-</script>
 
 <style>
 #canvas {
