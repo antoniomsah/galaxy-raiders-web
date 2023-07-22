@@ -1,29 +1,29 @@
 <template> 
 	<div id="canvas">
-		<div id="deep-space">
+		<table id="deep-space">
 			<h1 
 				class="custom-title"
-			> 
+			>
 				PLACAR
 			</h1>
+			<tbody>
+				<tr v-for="(player, index) in topThree" 
+					:key="index" 
+					class = "player-display-design"
+				>
+					<td class="custom-leaderboard">{{ index + 1 + "." }}</td>
+					<td class="custom-leaderboard">{{ player.score }}</td>
+				</tr>
 
-			<li v-for="(player, index) in topThree" 
-				:key="index" 
-				class = "player-display-design"
-			>
-				<span class="player-rank">{{ index + 1 + "." }}</span>
-				<span class="player-score">{{ player.score }}</span>
-			</li>
+			</tbody>
 
-			<div class="button-stack">
-				<NuxtLink 
-					to = "/"
-					class = "custom-nuxtlink"
-				> 
-					VOLTAR
-				</NuxtLink>
-			</div>
-		</div>
+			<NuxtLink 
+				to = "/"
+				class = "custom-nuxtlink"
+			> 
+				VOLTAR
+			</NuxtLink>
+		</table>
 	</div>
 </template>
 
@@ -60,19 +60,10 @@
 </script>
 
 <style>
-li.player-display-design {
-	color: white;
-	font-size: 100px;
-	margin-bottom: 5px;
-	list-style-type: none;
-}
+.custom-leaderboard {
+	font-size: 80px;
+	font-family: 'FontArcade', sans-serif;
 
-.player-rank {
-  flex: 0 0 30px;
-  margin: 50px;
-}
-
-.player-score {
-  flex: 0 0 60px;
+	color: #FFA500;
 }
 </style>
