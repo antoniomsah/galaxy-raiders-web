@@ -50,22 +50,6 @@ onMounted(() => {
 </script>
 
 <style>
-#canvas {
-  height: calc(100vh - 4rem);
-  width: calc(100vw - 4rem);
-
-  padding: 2rem;
-
-  background-color: #36bbf5;
-  overflow: hidden;
-
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @keyframes slide {
   0% {
     transform: translate(1px);

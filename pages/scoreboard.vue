@@ -4,7 +4,7 @@
 			<h1 
 				class="custom-title"
 			> 
-				Placar
+				PLACAR
 			</h1>
 
 			<li v-for="(player, index) in topThree" 
@@ -20,7 +20,7 @@
 					to = "/"
 					class = "custom-nuxtlink"
 				> 
-					Voltar
+					VOLTAR
 				</NuxtLink>
 			</div>
 		</div>
@@ -42,7 +42,7 @@
 				}, {
 				  "startTime" : "2023-07-22T16:06:00.290696042",
 				  "destroyedAsteroids" : 15,
-				  "score" : 18300.0
+				  "score" : 180300.0
 				}, {
 				  "startTime" : "2023-07-22T16:06:00.290696042",
 				  "destroyedAsteroids" : 15,
@@ -62,17 +62,14 @@
 <style>
 li.player-display-design {
 	color: white;
-	font-size: 150px;
+	font-size: 100px;
 	margin-bottom: 5px;
 	list-style-type: none;
 }
 
 .player-rank {
   flex: 0 0 30px;
-}
-
-.player-destroyedAsteroids {
-  flex: 1;
+  margin: 50px;
 }
 
 .player-score {

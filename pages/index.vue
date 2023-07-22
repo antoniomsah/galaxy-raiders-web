@@ -4,7 +4,7 @@
 			<h1 
 				class="custom-title"
 			> 
-				Galaxy Raiders
+				GALAXY RAIDERS
 			</h1>
 
 			<div class="button-stack">
@@ -12,34 +12,23 @@
 					to = "/game"
 					class = "custom-nuxtlink"
 				> 
-					Jogar 
+					JOGAR
 				</NuxtLink>
 
 				<NuxtLink 
 					to = "/scoreboard"
 					class = "custom-nuxtlink"
 				> 
-					Placar 
+					PLACAR 
 				</NuxtLink>
 
-				<button 
-					@click = "exitGame"
-					class = "custom-button"
+				<NuxtLink
+					to = "https://www.google.com"
+					class = "custom-nuxtlink"
 				> 
-					Sair 
-				</button>
+					SAIR
+				</NuxtLink>
 			</div>
 		</div>
 	</div>
 </template>
-
-<script>
-export default {
-	methods: {
-		// simulating exiting the game by redirection
-		exitGame() {
-			window.location.href = "https://www.google.com"
-		}
-	}
-}
-</script>
