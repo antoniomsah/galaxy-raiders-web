@@ -4,31 +4,29 @@
 			<h1 
 				class="custom-title"
 			> 
-				GALAXY RAIDERS
+				Galaxy Raiders
 			</h1>
 
-			<div class="button-stack">
-				<NuxtLink 
-					to = "/game"
-					class = "custom-nuxtlink"
-				> 
-					JOGAR
-				</NuxtLink>
+			<NuxtLink 
+				to = "/game"
+				class = "custom-nuxtlink"
+			> 
+				JOGAR
+			</NuxtLink>
 
-				<NuxtLink 
-					to = "/scoreboard"
-					class = "custom-nuxtlink"
-				> 
-					PLACAR 
-				</NuxtLink>
+			<NuxtLink 
+				to = "/scoreboard"
+				class = "custom-nuxtlink"
+			> 
+				PLACAR 
+			</NuxtLink>
 
-				<NuxtLink
-					to = "https://www.google.com"
-					class = "custom-nuxtlink"
-				> 
-					SAIR
-				</NuxtLink>
-			</div>
+			<NuxtLink
+				to = "https://www.google.com"
+				class = "custom-nuxtlink"
+			> 
+				SAIR
+			</NuxtLink>
 		</div>
 	</div>
 </template>

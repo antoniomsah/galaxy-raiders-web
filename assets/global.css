@@ -36,13 +36,6 @@
   align-items: center;
 }
 
-.button-stack {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
 .custom-nuxtlink {
 	display: flex;
 	justify-content: center;
