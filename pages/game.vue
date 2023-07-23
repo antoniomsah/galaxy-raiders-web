@@ -49,7 +49,7 @@ onMounted(() => {
 })
 </script>
 
-<style>
+<style scoped>
 @keyframes slide {
   0% {
     transform: translate(1px);
